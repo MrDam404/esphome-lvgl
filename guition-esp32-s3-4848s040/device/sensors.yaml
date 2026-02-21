@@ -65,9 +65,9 @@ sensor:
     on_value:
       - lvgl.label.update:
           id: temperatures
-          #text:
-            #format: "%d° / %d°"
-           # args: [ '(int)round(id(outdoor_temperature).state)', '(int)round(x)' ]
+          text:
+            format: "%d° / %d°"
+            args: [ '(int)round(id(outdoor_temperature).state)', '(int)round(x)' ]
 
   # ===========================================================================
   # SENSOR: Outdoor Temperature
@@ -97,9 +97,9 @@ sensor:
     on_value:
       - lvgl.label.update:
           id: temperatures
-          #text:
-           # format: "%d° / %d°"
-           # args: [ '(float)round(1)', '(id(slaapkamer_temp).state)' ]
+          text:
+            format: "%d° / %d°"
+            args: [ '(id(slaapkamer_temp).state)' ]
 
   # ===========================================================================
   # SENSOR: Office Blind Position
