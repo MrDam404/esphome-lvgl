@@ -98,7 +98,7 @@ sensor:
       - lvgl.label.update:
           id: temperatures
           text:
-            format: "%d° / %d°"
+            format: "%d°"
             args: [ '(id(slaapkamer_temp).state)' ]
 
   # ===========================================================================
