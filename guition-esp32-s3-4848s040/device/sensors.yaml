@@ -66,8 +66,8 @@ sensor:
       - lvgl.label.update:
           id: temperatures
           text:
-            format: "%d° / %d°"
-            args: [ '(int)round(id(outdoor_temperature).state)', '(int)round(x)' ]
+            format: "%d°"
+            args: [ '(id(outdoor_temperature).state)' ]
 
   # ===========================================================================
   # SENSOR: Outdoor Temperature
