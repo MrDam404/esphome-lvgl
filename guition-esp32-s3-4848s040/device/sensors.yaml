@@ -99,7 +99,7 @@ sensor:
           id: temperatures
           text:
             format: "%.1f°"
-            args: [ '(id(slaapkamer_temp).state)' ]
+            args: [ '(id(weather.forecast_thuis).state)' ]
 
   # ===========================================================================
   # SENSOR: Office Blind Position
