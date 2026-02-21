@@ -99,7 +99,7 @@ sensor:
           id: temperatures
           text:
             format: "%d° / %d°"
-            args: [ '(int)round(1)', '(int)round(id(slaapkamer_temp).state)' ]
+            args: [ '(float)round(1)', '(int)round(id(slaapkamer_temp).state)' ]
 
   # ===========================================================================
   # SENSOR: Office Blind Position
