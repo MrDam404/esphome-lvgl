@@ -67,7 +67,7 @@ sensor:
           id: temperatures
           text:
             format: "%d°"
-            args: [ '(id(outdoor_temperature).state)' ]
+            args: [ '(id(slaapkamer_temp).state)' ]
 
   # ===========================================================================
   # SENSOR: Outdoor Temperature
