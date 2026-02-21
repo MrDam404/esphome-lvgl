@@ -41,7 +41,7 @@
 sensor:
 
   # ===========================================================================
-  # SENSOR: Office Temperature (Indoor)
+  # SENSOR: Slaapkamer Temperature (Indoor)
   # ===========================================================================
   # WHAT IT MONITORS:
   #   The temperature inside the office from sensor.office_temperature
@@ -60,8 +60,8 @@ sensor:
   #   lvgl.yaml → temperatures label (id: temperatures)
   # ===========================================================================
   - platform: homeassistant
-    entity_id: sensor.office_temperature
-    id: office_temperature
+    entity_id: sensor.slaapkamer_thermometer_temperatuur
+    id: slaapkamer_temp
     on_value:
       - lvgl.label.update:
           id: temperatures
